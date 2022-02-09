@@ -1,0 +1,41 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+body{
+  background-color: #222;
+}
+
+.calender ul{
+  display: grid;
+  grid-template-columns: repeat(7, 7fr);
+  grid-gap: 1em;
+}
+
+.calender li{
+  background-color: rgb(0, 0, 0);
+  height: 100px; 
+  list-style: none; 
+  font-size: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  color: #ddd;
+  cursor: pointer;
+
+}
+
+.calender li:hover{
+  background-color: rgb(15, 15, 15);
+  transition: 0.3s;
+}
+
+.month-name h2{
+  color: white;
+  margin: 50px 0px;
+  font-size: 4em;
+  text-align: center;
+  color: rgb(12, 211, 12) !important;
+}
+.date{
+  color: rgb(12, 211, 12) !important;
+}
